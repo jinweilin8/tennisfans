@@ -11,9 +11,6 @@ const ProfileSchema = new mongoose.Schema({
   rating: {
     type: Number,
   },
-  location: {
-    type: String,
-  },
   bio: {
     type: String,
   },
