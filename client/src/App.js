@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.css';
+import './sass/App.scss';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       hello world
+      <h1 className="primary-heading">Testing</h1>
     </div>
   );
 }
