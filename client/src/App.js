@@ -1,13 +1,12 @@
 import React from 'react';
-import './sass/App.scss';
+import Landing from './components/layout/landing/Landing';
 
 const App = () => {
   return (
-    <div className="App">
-      hello world
-      <h1 className="primary-heading">Testing</h1>
+    <div className='App'>
+      <Landing />
     </div>
   );
-}
+};
 
 export default App;
