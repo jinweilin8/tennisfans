@@ -4,23 +4,21 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 const Landing = (props) => {
-  return (
-    <section className='text-gray-700 body-font'>
-      <Title>Styled component</Title>
-      <Testing>Twailwind</Testing>
-    </section>
-  );
+  return <LandingWrapper></LandingWrapper>;
 };
 
 Landing.propTypes = {};
 
 export default Landing;
 
-const Title = styled.h1`
-  font-size: 2rem;
-  color: blue;
-`;
-
-const Testing = styled.h1`
-  ${tw`text-6xl text-orange-500`};
+const LandingWrapper = styled.section`
+  ${tw`pt-24`};
+  position: relative;
+  /* background: linear-gradient(90deg, #68d391 0%, #63b3ed 100%),
+    url(${require('../../assets/img/hero.jpg')}); */
+  background: linear-gradient(
+        90deg,
+        rgba(104, 211, 145, .9) 0%,
+        rgba(99, 179, 237, .9) 100%), url(${require('../../assets/img/hero.jpg')});
+  height: 100vh;
 `;
